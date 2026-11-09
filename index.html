@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday ZEZO 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+<style>
+/* ===== الألوان (دافئة فقط) — عدّلها من هنا ===== */
+:root{--o:#ff9d2e;--r:#ff5e57;--y:#ffd23f;--c:#fff1d6;--g:#f5b53a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo','Tajawal',sans-serif;color:var(--c);background:linear-gradient(135deg,#3a1204,#6b1f0a,#8a2a12,#3a1204);background-size:300% 300%;animation:bg 16s ease infinite;overflow-x:hidden}
+body.lock{overflow:hidden;height:100vh}
+@keyframes bg{50%{background-position:100% 100%}}
+#cv{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:90}
+#pb{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--y),var(--r));z-index:96;box-shadow:0 0 12px var(--o)}
+.gt{background:linear-gradient(90deg,var(--y),var(--o),var(--r),var(--y));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 4s linear infinite}
+@keyframes sh{to{background-position:200%}}
+button:focus-visible,#pw:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+.btn{font:800 1.15rem 'Cairo',sans-serif;color:#4a1500;border:0;border-radius:50px;padding:14px 36px;cursor:pointer;background:linear-gradient(135deg,var(--y),var(--o),var(--r));box-shadow:0 0 25px #ff9d2e99;transition:.3s}
+.btn:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 0 45px var(--y)}
+.btn:active{transform:scale(.92)}
+/* ===== شاشة الدخول ===== */
+#lg{position:fixed;inset:0;z-index:80;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px;text-align:center;background:radial-gradient(circle at 50% 40%,#8a2a12,#2b0e05 75%);transition:1.3s cubic-bezier(.7,0,.3,1)}
+#lg.go{opacity:0;transform:scale(1.6);filter:blur(12px);pointer-events:none}
+#lg h1{font-size:clamp(2rem,8vw,4rem)}
+#lg p{font-size:clamp(1rem,3.5vw,1.4rem)}
+#pw{width:min(300px,80vw);padding:14px;border-radius:50px;border:2px solid var(--g);background:#ffffff14;color:var(--c);text-align:center;font:600 1.1rem Poppins,sans-serif;outline:0;direction:ltr}
+#pw::placeholder{color:#fff1d680;font-family:Cairo,sans-serif}
+#pw:focus{box-shadow:0 0 25px var(--o)}
+.shake{animation:sk .5s}
+@keyframes sk{20%,60%{transform:translateX(-14px)}40%,80%{transform:translateX(14px)}}
+#er{min-height:1.8em;color:var(--y);font-weight:700}
+/* ===== الأقسام + حركة الظهور ===== */
+section{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 18px;text-align:center;gap:22px}
+h2{font-size:clamp(1.6rem,6vw,2.8rem);line-height:1.5}
+.hero h1{font-family:Poppins,sans-serif;font-size:clamp(2.2rem,10vw,5.5rem);font-weight:800;line-height:1.15}
+.hero p{font-size:clamp(1.1rem,4vw,1.7rem);max-width:700px}
+.rv{opacity:0;transition:1.1s cubic-bezier(.2,.8,.2,1)}
+[data-a=u]{transform:translateY(70px)}[data-a=z]{transform:scale(.5)}[data-a=l]{transform:translateX(-90px)}[data-a=r]{transform:translateX(90px) rotate(6deg)}[data-a=f]{transform:perspective(800px) rotateX(60deg)}
+.rv.on{opacity:1;transform:none}
+.tilt{transition:transform .15s}
+/* ===== العداد ===== */
+.cd{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.cb{width:clamp(70px,20vw,120px);padding:18px 6px;border-radius:20px;background:linear-gradient(160deg,#ffffff22,#ffffff08);border:1px solid #ffd23f66;box-shadow:0 0 25px #ff9d2e44}
+.cb b{display:block;font:800 clamp(1.8rem,8vw,3rem) Poppins,sans-serif;color:var(--y)}
+.dt{font:700 clamp(1.1rem,4.5vw,1.8rem) Poppins,sans-serif;letter-spacing:4px;color:var(--o)}
+/* ===== الرسالة (حرفًا بحرف) ===== */
+#tw{width:100%;max-width:640px}
+.mc{padding:28px 22px;border-radius:24px;background:#ffffff12;border:1px solid #ffd23f55;backdrop-filter:blur(6px);text-align:right;font-size:clamp(1.05rem,3.8vw,1.35rem);line-height:2;white-space:pre-line;min-height:320px}
+#tx::after{content:"|";color:var(--y);animation:bl .7s infinite}
+@keyframes bl{50%{opacity:0}}
+/* ===== الكارت ===== */
+.cw{perspective:1200px}
+.cr{position:relative;width:min(86vw,340px);height:380px;transform-style:preserve-3d;cursor:pointer}
+.in,.fr,.bk{position:absolute;inset:0;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px;gap:12px}
+.in{background:linear-gradient(#fff6e0,#ffe2a8);color:#6b1f0a;font-size:1.15rem;line-height:1.9;font-weight:700}
+.in p{white-space:pre-line;opacity:0;transition:1s .9s}.cr.open .in p{opacity:1}
+.cv{position:absolute;inset:0;transform-origin:left;transform-style:preserve-3d;transition:1.5s cubic-bezier(.6,0,.3,1)}
+.cr.open .cv{transform:rotateY(-165deg)}
+.fr,.bk{backface-visibility:hidden}
+.fr{background:linear-gradient(145deg,var(--r),var(--o) 60%,var(--y));box-shadow:0 0 40px #ff9d2e88;color:#fff;font-size:1.8rem;font-weight:800;line-height:1.4}
+.fr span{font-size:4rem}.fr small{font-size:.95rem;font-weight:400}
+.bk{background:linear-gradient(#ffe08a,#ffb347);transform:rotateY(180deg)}
+/* ===== الهدايا ===== */
+.gs{display:flex;gap:46px;flex-wrap:wrap;justify-content:center;padding-bottom:70px}
+.gift{position:relative;width:104px;height:120px;cursor:pointer;transition:transform .2s}
+.gift:hover{transform:translateY(-8px) rotate(-3deg)}.gift:active{transform:scale(.92)}
+.bx,.lid{position:absolute;background:linear-gradient(90deg,var(--a) 40%,var(--c) 40% 60%,var(--a) 60%);border-radius:8px;box-shadow:inset 0 -8px 14px #0003}
+.bx{bottom:0;left:0;right:0;height:84px}
+.lid{bottom:80px;left:-8px;right:-8px;height:34px;transition:1s cubic-bezier(.3,1.7,.5,1)}
+.lid::before{content:"🎀";position:absolute;top:-26px;left:50%;margin-left:-17px;font-size:34px}
+.gift.open .lid{transform:translateY(-70px) rotate(-24deg);opacity:0}
+.gift p{position:absolute;top:128px;left:50%;width:150px;margin-left:-75px;font-size:.95rem;font-weight:700;opacity:0;transform:scale(0);transition:.6s .3s cubic-bezier(.3,1.7,.5,1)}
+.gift.open p{opacity:1;transform:none;color:var(--y)}
+/* ===== التورتة (CSS فقط) ===== */
+.ck{position:relative;width:260px;height:300px;cursor:pointer;transition:transform .3s;filter:drop-shadow(0 18px 24px #0007)}
+.ck:hover{transform:scale(1.04)}
+.l{position:absolute;left:50%;transform:translateX(-50%);border-radius:14px 14px 10px 10px;overflow:hidden}
+.l::before{content:"";position:absolute;top:-2px;left:0;right:0;height:22px;background:radial-gradient(circle at 14px 0,var(--c) 13px,transparent 14px) 0 0/28px 22px repeat-x}
+.l1{bottom:14px;width:260px;height:80px;background:linear-gradient(#ffb347,#ff9d2e)}
+.l2{bottom:94px;width:190px;height:70px;background:linear-gradient(#ff7a6b,var(--r))}
+.l3{bottom:164px;width:120px;height:60px;background:linear-gradient(#ffe08a,var(--y))}
+.pl{position:absolute;bottom:0;left:-24px;right:-24px;height:26px;border-radius:50%;background:linear-gradient(#fff1d6,var(--g))}
+.cn{position:absolute;bottom:224px;left:50%;transform:translateX(-50%);display:flex;gap:18px}
+.cn i{width:9px;height:38px;border-radius:3px;background:repeating-linear-gradient(45deg,var(--c) 0 6px,var(--r) 6px 12px);position:relative}
+.cn i::after{content:"";position:absolute;bottom:100%;left:50%;width:14px;height:26px;margin-left:-7px;border-radius:50% 50% 50% 50%/65% 65% 35% 35%;background:radial-gradient(#fff 8%,var(--y) 40%,var(--o) 75%);box-shadow:0 0 24px 10px #ffb30099;transform-origin:50% 100%;animation:fl .18s infinite alternate}
+@keyframes fl{to{transform:scale(1.12,.9) rotate(4deg)}}
+.out .cn i::after{display:none}
+/* ===== الختام ===== */
+#end h2{font-size:clamp(1.8rem,7vw,3.4rem);max-width:800px}
+/* ===== الموسيقى ===== */
+#mu{position:fixed;top:14px;left:14px;z-index:95;display:flex;align-items:center;gap:8px;padding:6px 12px;border-radius:40px;background:#2b0e05cc;border:1px solid var(--g);font-size:.85rem}
+#mb{background:none;border:0;cursor:pointer;display:flex;align-items:flex-end;gap:3px;height:26px;padding:0 4px}
+#mb i{width:5px;height:6px;background:var(--y);border-radius:3px}
+#mb.on i{animation:eq .6s infinite alternate}#mb.on i:nth-child(2){animation-delay:.2s}#mb.on i:nth-child(3){animation-delay:.4s}
+@keyframes eq{to{height:24px}}
+#vol{width:70px;accent-color:var(--o)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body class="lock">
+<canvas id="cv"></canvas><div id="pb"></div>
+
+<!-- زر الموسيقى والتحكم في الصوت -->
+<div id="mu"><button id="mb" aria-label="تشغيل أو إيقاف الموسيقى"><i></i><i></i><i></i></button><span id="ml">🎵 تشغيل</span><input id="vol" type="range" min="0" max="1" step=".05" value=".4" aria-label="الصوت"></div>
+
+<!-- شاشة الدخول -->
+<div id="lg">
+  <h1 class="gt">أهلاً بيك يا ZEZO ❤️</h1>
+  <p>في مفاجأة مستنياك... بس الأول ادخل كلمة السر</p>
+  <input id="pw" placeholder="كلمة السر" autocomplete="off" aria-label="كلمة السر">
+  <button class="btn" id="gb">دخول 🔓</button>
+  <div id="er"></div>
+</div>
+
+<main>
+<section class="hero">
+  <h1 class="gt rv" data-a="z" dir="ltr">HAPPY BIRTHDAY ZEZO 🎂</h1>
+  <p class="rv" data-a="u">النهارده مش يوم عادي... النهارده عيد ميلاد أغلى صاحب ❤️</p>
+  <div class="rv" data-a="u"><button class="btn" onclick="jump('s1')">يلا نبدأ المفاجأة ✨</button></div>
+</section>
+
+<!-- 1) العداد -->
+<section id="s1">
+  <h2 class="gt rv" data-a="f">العد التنازلي لعيد ميلادك 🎉</h2>
+  <div class="dt rv" data-a="z">10 NOVEMBER 2013</div>
+  <div class="cd rv" data-a="u">
+    <div class="cb tilt"><b id="dd">00</b>يوم</div><div class="cb tilt"><b id="hh">00</b>ساعة</div>
+    <div class="cb tilt"><b id="mm">00</b>دقيقة</div><div class="cb tilt"><b id="ss">00</b>ثانية</div>
+  </div>
+  <p id="nt" class="rv" data-a="u" style="font-size:1.3rem;color:var(--y)"></p>
+</section>
+
+<!-- 2) الرسالة حرفًا بحرف -->
+<section id="s2">
+  <h2 class="gt rv" data-a="l">كلمة من القلب 💌</h2>
+  <div id="tw" class="rv" data-a="r"><div class="mc tilt"><span id="tx"></span></div></div>
+</section>
+
+<!-- 3) الكارت -->
+<section id="s3">
+  <h2 class="gt rv" data-a="z">في كارت مستنيك 💌</h2>
+  <div class="cw rv" data-a="f">
+    <div class="cr" id="cr">
+      <div class="in"><p>يا زياد ❤️
+إنت مش مجرد صاحب، إنت أخ ربنا رزقني بيه.
+ربنا يخليك وتفضل دايمًا مبسوط،
+ويحقق كل اللي في قلبك.
+كل سنة وإنت أحلى حاجة في حياتنا! 🎂</p></div>
+      <div class="cv"><div class="fr"><span>💌</span>رسالة مخصوص لـ ZEZO<small>اضغط لفتح الكارت</small></div><div class="bk"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4) الهدايا -->
+<section id="s4">
+  <h2 class="gt rv" data-a="r">افتح هداياك 🎁</h2>
+  <p class="rv" data-a="u">اضغط على كل هدية وشوف جواها إيه!</p>
+  <div class="gs rv" data-a="u">
+    <div class="gift" style="--a:#ff5e57"><i class="lid"></i><i class="bx"></i><p>ضحكة عمرها ما تخلص 😂</p></div>
+    <div class="gift" style="--a:#ff9d2e"><i class="lid"></i><i class="bx"></i><p>نجاح وتفوق في كل خطوة 🌟</p></div>
+    <div class="gift" style="--a:#f5b53a"><i class="lid"></i><i class="bx"></i><p>فرحة قلبك مالهاش آخر ❤️</p></div>
+  </div>
+</section>
+
+<!-- 5) التورتة -->
+<section id="s5">
+  <h2 class="gt rv" data-a="z">التورتة بتاعتك 🎂</h2>
+  <div class="rv" data-a="u"><div class="ck" id="ck"><div class="cn"><i></i><i></i><i></i><i></i><i></i></div><div class="l l3"></div><div class="l l2"></div><div class="l l1"></div><div class="pl"></div></div></div>
+  <p id="wh" class="rv" data-a="u" style="font-size:1.2rem">اضغط على التورتة وفوّت الشموع 🕯️</p>
+</section>
+
+<!-- 6) الختام -->
+<section id="end">
+  <h2 id="fx" class="gt rv" data-a="z">في ناس وجودها في حياتنا هدية...<br>وأنت واحد منهم ❤️</h2>
+  <h2 class="rv" data-a="u" style="color:var(--y)">كل سنة وأنت طيب يا زياد!</h2>
+  <div class="rv" data-a="u"><button class="btn" id="fin">فرقعة كونفيتي 🎉</button></div>
+</section>
+</main>
+
+<script>
+const $=id=>document.getElementById(id),R=(a,b)=>a+Math.random()*(b-a);
+
+/* ===== الخلفية المتحركة + الكونفيتي (Canvas واحد خفيف) ===== */
+const cv=$('cv'),x=cv.getContext('2d'),D=Math.min(devicePixelRatio||1,2),C=['#ffd23f','#ff9d2e','#ff5e57','#fff1d6','#f5b53a'];
+let W,H,P=[];
+function rs(){W=innerWidth;H=innerHeight;cv.width=W*D;cv.height=H*D;x.setTransform(D,0,0,D,0,0)}rs();addEventListener('resize',rs);
+const K=['❤','✦','★','•','•','✦'];
+const F=Array.from({length:innerWidth<600?28:55},()=>({x:R(0,W),y:R(0,H),s:R(10,26),v:R(.2,.8),w:R(0,6.28),k:K[Math.random()*6|0],c:C[Math.random()*5|0],a:R(.25,.6)}));
+// انفجار كونفيتي/قلوب/نجوم من نقطة معينة
+function boom(px,py,n=100,g=['','','','❤','★','✦']){for(let i=0;i<n;i++){const a=R(0,6.28),s=R(3,13);P.push({x:px,y:py,vx:Math.cos(a)*s,vy:Math.sin(a)*s-5,r:R(0,6),vr:R(-.3,.3),z:R(6,13),c:C[Math.random()*5|0],g:g[Math.random()*g.length|0],l:1})}}
+(function L(){x.clearRect(0,0,W,H);
+F.forEach(p=>{p.y-=p.v;p.w+=.02;p.x+=Math.sin(p.w)*.4;if(p.y<-30){p.y=H+30;p.x=R(0,W)}x.globalAlpha=p.a;x.fillStyle=p.c;x.font=p.s+'px serif';x.fillText(p.k,p.x,p.y)});
+P=P.filter(p=>p.l>0&&p.y<H+50);
+P.forEach(p=>{p.vy+=.28;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;p.l-=.008;x.globalAlpha=Math.max(p.l,0);x.fillStyle=p.c;x.save();x.translate(p.x,p.y);x.rotate(p.r);if(p.g){x.font=p.z*2+'px serif';x.fillText(p.g,0,0)}else x.fillRect(-p.z/2,-p.z/4,p.z,p.z/2);x.restore()});
+requestAnimationFrame(L)})();
+
+/* ===== الموسيقى: لحن Happy Birthday بالـ Web Audio (بدون ملف أو رابط خارجي) ===== */
+let ac,mg,tm,pl=0;
+const N=[[392,.75],[392,.25],[440,1],[392,1],[523,1],[494,2],[392,.75],[392,.25],[440,1],[392,1],[587,1],[523,2],[392,.75],[392,.25],[784,1],[659,1],[523,1],[494,1],[440,2],[698,.75],[698,.25],[659,1],[523,1],[587,1],[523,2]];
+function seq(){let t=ac.currentTime+.1;const b=.45;N.forEach(([f,d])=>{const o=ac.createOscillator(),g=ac.createGain();o.type='triangle';o.frequency.value=f;o.connect(g);g.connect(mg);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.6,t+.03);g.gain.exponentialRampToValueAtTime(.001,t+d*b);o.start(t);o.stop(t+d*b+.05);t+=d*b});tm=setTimeout(seq,(t-ac.currentTime+.8)*1000)}
+function music(on){ac=ac||new(window.AudioContext||window.webkitAudioContext)();clearTimeout(tm);if(mg)mg.disconnect();pl=on;if(on){ac.resume();mg=ac.createGain();mg.gain.value=$('vol').value;mg.connect(ac.destination);seq()}$('mb').classList.toggle('on',on);$('ml').textContent=on?'🎵 إيقاف':'🎵 تشغيل'}
+$('mb').onclick=()=>music(!pl);
+$('vol').oninput=e=>{if(mg)mg.gain.value=e.target.value};
+
+/* ===== الدخول بكلمة السر ===== */
+const PW='2013/11/10',BAD=['ولا ولا... جرّب تاني يا نجم 😄','قريب! بس مش كده 🙈','الباب لسه مقفول 🔒 تلميح: يوم ميلادك 🎂','عايزك تفتكر تاريخ ميلادك الأول 😂'];
+const norm=s=>s.trim().replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[-.]/g,'/');
+// الـ Observer: يشغّل حركة الظهور عند التمرير
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('on');io.unobserve(t);if(t.id=='tw')typeIt();if(t.id=='fx')boom(W/2,H*.5,200)}),{threshold:.25});
+function enter(){
+  if(norm($('pw').value)==PW){
+    $('er').textContent='';boom(W/2,H/2,170);music(true);$('lg').classList.add('go');
+    document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+    setTimeout(()=>{$('lg').style.display='none';document.body.classList.remove('lock')},1300);
+  }else{
+    $('er').textContent=BAD[Math.random()*BAD.length|0];
+    const p=$('pw');p.classList.remove('shake');void p.offsetWidth;p.classList.add('shake');
+  }
+}
+$('gb').onclick=enter;$('pw').onkeydown=e=>{if(e.key=='Enter')enter()};
+function jump(id){$(id).scrollIntoView({behavior:'smooth'});boom(W/2,H*.75,110)}
+
+/* ===== العداد التنازلي (لعيد الميلاد القادم 10 نوفمبر) ===== */
+function tick(){
+  const n=new Date(),y=n.getFullYear(),td=n.getMonth()==10&&n.getDate()==10;let t=new Date(y,10,10);
+  if(!td&&n>t)t=new Date(y+1,10,10);
+  const d=td?0:t-n,v=[d/864e5,d/36e5%24,d/6e4%60,d/1e3%60];
+  ['dd','hh','mm','ss'].forEach((k,i)=>$(k).textContent=String(Math.floor(v[i])).padStart(2,'0'));
+  $('nt').textContent=td?'النهارده عيد ميلادك يا ZEZO! 🎉🎂':'عيد ميلادك رقم '+(t.getFullYear()-2013)+' على الأبواب 🎈';
+}
+tick();setInterval(tick,1000);
+
+/* ===== الرسالة حرفًا بحرف ===== */
+const MSG=`كل سنة وأنت طيب يا زياد ❤️
+كل سنة وأنت صاحبي وأخويا، وعقبال سنين كتير كلها فرحة ونجاح وضحك.
+يا رب تحقق كل اللي نفسك فيه، وتفضل دايمًا مبسوط وناجح.
+النهارده يوم مميز لأنه يوم ميلاد شخص مميز.
+استمتع بيومك يا ZEZO، وخليك عارف إنك غالي جدًا عندي.
+Happy Birthday يا أسطورة! 🎂🔥`;
+let ti=0;
+function typeIt(){if(ti<MSG.length){$('tx').textContent=MSG.slice(0,++ti);setTimeout(typeIt,45)}}
+
+/* ===== الكارت / الهدايا / التورتة / الختام ===== */
+$('cr').onclick=()=>{const o=$('cr').classList.toggle('open');if(o)setTimeout(()=>{const r=$('cr').getBoundingClientRect();boom(r.left+r.width/2,r.top+r.height/2,90,['❤','★','✦',''])},700)};
+document.querySelectorAll('.gift').forEach(g=>g.onclick=()=>{g.classList.add('open');const r=g.getBoundingClientRect();boom(r.left+r.width/2,r.top+20,90,['❤','★','✦','❤',''])});
+$('ck').onclick=()=>{const o=$('ck').classList.toggle('out');$('wh').textContent=o?'اتمنى أمنية... وربنا يحققها كلها ✨':'اضغط على التورتة وفوّت الشموع 🕯️';if(o){const r=$('ck').getBoundingClientRect();boom(r.left+r.width/2,r.top+40,150)}};
+$('fin').onclick=()=>{boom(W*.25,H*.7,100);boom(W*.75,H*.7,100);boom(W/2,H*.5,160)};
+
+/* ===== شريط التقدم + ميل 3D للكروت عند الهوفر ===== */
+addEventListener('scroll',()=>{$('pb').style.width=scrollY/(document.documentElement.scrollHeight-innerHeight)*100+'%'});
+document.querySelectorAll('.tilt').forEach(e=>{e.onmousemove=v=>{const r=e.getBoundingClientRect(),a=(v.clientX-r.left)/r.width-.5,b=(v.clientY-r.top)/r.height-.5;e.style.transform=`perspective(700px) rotateY(${a*18}deg) rotateX(${-b*18}deg) scale(1.03)`};e.onmouseleave=()=>e.style.transform=''});
+</script>
+</body>
+</html>
